@@ -2,6 +2,8 @@ const Item = require('../models/ItemsModel.js');
 
 module.exports = (router) => {
 
-    // router.post('/create', Agency.createAgencyAndClient);
+    router.get('/', Item.getItems);
+
+    router.post('/add-items', Item.createItem);
 
 };
